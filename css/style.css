@@ -1,55 +1,9 @@
 body {
   font-family: "Montserrat", sans-serif;
-  min-height: 100vh;
   position: relative;
-  padding-bottom: 120px;
+  min-height: 100vh;
+  padding-bottom: 5em;
 }
-
-/* .divMain {
-    margin-top: 30px;
-} */
-
-.imgEvento {
-  display: none;
-  align-self: center
-}
-
-.tituloDesktop {
-  display: none;
-  font-weight: bold;
-}
-
-.tituloMobile {
-  font-weight: bold;
-}
-
-/* .contenidoDesktop {
-  margin-bottom: 40px;
-} */
-
-/* button {
-  margin-top: 30px;
-} */
-
-footer {
-  color: rgb(168, 168, 168);
-  font-size: 6px;
-  padding: 10px 40px 10px 40px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-/* button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 a {
   text-decoration: none;
@@ -60,19 +14,6 @@ a:hover {
   color: inherit;
 }
 
-.size-img {
-  width: 50%;
-  margin-top: 15px;
-}
-
-.hover-azul {
-  color: #125b96;
-  transition: all 0.3s ease-out;
-}
-
-.hover-azul:hover {
-  color: #4f92c9;
-}
 
 .color-azul {
   color: #3b89c8;
@@ -90,285 +31,106 @@ a:hover {
   color: #4db77d;
 }
 
-.container-apps {
-  display: flex;
-  flex-direction: column;
-}
-
-.container-apps a {
-  text-align: center;
-}
-
 .containerRedes {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link-comprar {
-  width: 75%;
+.container-apps{
+  text-align: center;
 }
 
-.margint-5 {
-  margin-top: 50px;
+.footer {
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.hover-azul {
+  color: #125b96;
+  transition: all 0.3s ease-out;
+}
+
+.hover-azul:hover {
+  color: #4f92c9;
+}
+
+h1 {
+  text-align: center;
+}
+
+.imgEvento {
+  display: none;
+}
+
+p{
+  text-align: justify;
 }
 
 .redes {
   width: 30px;
   height: auto;
   margin-right: 15px;
-  /* padding: 0 10px; */
+}
+.tamaño-apps{
+  width: 40%;
 }
 
-.contenidoText {
-  font-size: 16px;
-}
 
-.container-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* media queries */
 
 @media screen and (min-width: 992px) {
   body {
-    font-family: "Montserrat", sans-serif;
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 0;
+    padding-bottom: 3em;
+  }
+  .container-apps div{
+    display: inline;
   }
 
-  .container-apps {
-    flex-direction: row;
+  h1 {
+    margin: 0 0 15px 0;
   }
 
-  .size-img {
-    width: 80%;
+  .zoom{
+    transition: 0.2s
   }
 
+  .zoom:hover{
+    transform: scale(1.04);
+  }
+  
   .imgEvento {
-    width: 450px;
-    display: block;
-    height: 450px;
-  }
-
-  .divMain {
-    height: calc(100vh - 195px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tituloDesktop {
     display: block;
   }
-  .generalDesktop {
-    width: 50%;
-    padding: 0 0 0 20px;
+  .tamaño-contenido {
+    height: calc(100vh - 165px);
   }
-
-  .tituloMobile {
-    display: none;
-  }
-
-  .contenidoDesktop {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    padding: 10px 100px 10px 100px;
-  }
-}
-
-@media screen and (min-width: 992px) and (min-height: 600px) {
-  body {
+  .contenido-principal {
     height: 100%;
-    /* padding-bottom: 130px; */
+    align-items: center;
   }
-
-  .contenidoDesktop {
-    margin-bottom: 0;
-  }
-
-  .imgEvento {
-    width: 300px;
-    /* box-shadow: 5px 5px 5px 0 rgb(118, 118, 118); */
-    height: 300px;
-  }
-  /* 
-  .divMain {
-    margin-top:150px;
-    
-  } */
 }
 
-@media screen and (min-width: 992px) and (min-height: 800px) {
-  .imgEvento {
-    width: 520px;
-    height: 520px;
-  }
-  .divMain {
-    margin-top: 0;
-  }
+@media screen and (width: 1024px) and (height: 768px) {
   body {
-    padding-bottom: 0;
+    padding-bottom: 5em;
   }
+ h1{
+  margin: 10px 0;
+ }
 }
-
-
-
-
-
-@media screen and (width: 280px) and (height: 653px) {
-  .size-img {
-    width: 60%;
-  }
-}
-
-@media screen and (width: 540px) and (height: 720px) {
-  .size-img {
-    width: 35%;
-  }
-}
-
-@media screen and (width: 653px) and (height: 280px) {
-  .size-img {
-    width: 35%;
-  }
-}
-
-@media screen and (width: 667px) and (height: 375px) {
-  .size-img {
-    width: 35%;
-  }
-}
-
-@media screen and (width: 720px) and (height: 540px) {
-  .size-img {
-    width: 30%;
-  }  
-}
-
-@media screen and (width: 740px) and (height: 360px) {
-  .size-img {
-    width: 30%;
-  }  
-}
-
-
-
-@media screen and (width: 768px) and (height: 1024px) {
-  .size-img {
-    width: 30%;
-  }
-  .divMain {
-    margin-top: 120px;
-  }
-}
-
-@media screen and (width: 820px) and (height: 1180px) {
-  .size-img {
-    width: 30%;
-  }
-  .divMain {
-    margin-top: 200px;
-  }
-}
-
-@media screen and (width: 844px) and (height: 390px) {
-  .size-img {
-    width: 30%;
-  }
-  
-}
-
-@media screen and (width: 851px) and (height: 393px) {
-  .size-img {
-    width: 30%;
-  }  
-}
-
-
-
-@media screen and (width: 896px) and (height: 414px) {
-  .size-img {
-    width: 30%;
-  }
-  
-}
-
-@media screen and (width: 912px) and (height: 1368px) {
-  .divMain {
-    margin-top: 240px;
-  }
-}
-
-@media screen and (width: 914px) and (height: 412px) {
-  .size-img {
-    width: 25%;
-  } 
-}
-
-
 
 
 @media screen and (width: 1024px) and (height: 600px) {
-  .margint-5 {
-    margin-top: 0;
-  }
-
-  .contenidoDesktop {
-    align-items: center;
-  }
   body {
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 350px;
+    padding-bottom: 5em;
   }
-
-  .generalDesktop {
-    height: 300px;
-  }
-  .imgEvento {
-    display: none;
-  }
-}
-
-
-@media screen and (width: 1024px) and (height: 768px) {
-
-  body {
-    padding-bottom: 200px;
-  }
-
-  .imgEvento {
-    width: 450px;
-    height: 450px;
-  }
-  .divMain {
-    margin-top: 0;
-  }
-  .generalDesktop {
-    height: 300px;
+  .tamaño-contenido {
+    height: auto;
   }
   .margint-5 {
-    margin-top: 0;
-  }
-  .generalDesktop {
-    height: 300px;
+    margin-top: 30px;
   }
 }
-
-@media screen and (width: 1180px) and (min-height: 820px) {
-  body {
-    padding-bottom: 200px;
-  }
-  .generalDesktop {
-    height: 300px;
-  }
-}
-
