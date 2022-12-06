@@ -11,6 +11,7 @@ body {
 
 .imgEvento {
   display: none;
+  align-self: center
 }
 
 .tituloDesktop {
@@ -22,9 +23,9 @@ body {
   font-weight: bold;
 }
 
-.contenidoDesktop {
+/* .contenidoDesktop {
   margin-bottom: 40px;
-}
+} */
 
 /* button {
   margin-top: 30px;
@@ -60,7 +61,7 @@ a:hover {
 }
 
 .size-img {
-  width: 40%;
+  width: 50%;
   margin-top: 15px;
 }
 
@@ -218,14 +219,125 @@ a:hover {
   }
 }
 
-@media screen and (width: 1180px) and (min-height: 820px) {
-  body {
-    padding-bottom: 200px;
+
+
+
+
+@media screen and (width: 280px) and (height: 653px) {
+  .size-img {
+    width: 60%;
   }
+}
+
+@media screen and (width: 540px) and (height: 720px) {
+  .size-img {
+    width: 35%;
+  }
+}
+
+@media screen and (width: 653px) and (height: 280px) {
+  .size-img {
+    width: 35%;
+  }
+}
+
+@media screen and (width: 667px) and (height: 375px) {
+  .size-img {
+    width: 35%;
+  }
+}
+
+@media screen and (width: 720px) and (height: 540px) {
+  .size-img {
+    width: 30%;
+  }  
+}
+
+@media screen and (width: 740px) and (height: 360px) {
+  .size-img {
+    width: 30%;
+  }  
+}
+
+
+
+@media screen and (width: 768px) and (height: 1024px) {
+  .size-img {
+    width: 30%;
+  }
+  .divMain {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (width: 820px) and (height: 1180px) {
+  .size-img {
+    width: 30%;
+  }
+  .divMain {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (width: 844px) and (height: 390px) {
+  .size-img {
+    width: 30%;
+  }
+  
+}
+
+@media screen and (width: 851px) and (height: 393px) {
+  .size-img {
+    width: 30%;
+  }  
+}
+
+
+
+@media screen and (width: 896px) and (height: 414px) {
+  .size-img {
+    width: 30%;
+  }
+  
+}
+
+@media screen and (width: 912px) and (height: 1368px) {
+  .divMain {
+    margin-top: 240px;
+  }
+}
+
+@media screen and (width: 914px) and (height: 412px) {
+  .size-img {
+    width: 25%;
+  } 
+}
+
+
+
+
+@media screen and (width: 1024px) and (height: 600px) {
+  .margint-5 {
+    margin-top: 0;
+  }
+
+  .contenidoDesktop {
+    align-items: center;
+  }
+  body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 350px;
+  }
+
   .generalDesktop {
     height: 300px;
   }
+  .imgEvento {
+    display: none;
+  }
 }
+
 
 @media screen and (width: 1024px) and (height: 768px) {
 
@@ -251,21 +363,12 @@ a:hover {
   }
 }
 
-@media screen and (width: 1024px) and (height: 600px) {
-  .margint-5 {
-    margin-top: 0;
-  }
-
-  .contenidoDesktop {
-    align-items: center;
-  }
+@media screen and (width: 1180px) and (min-height: 820px) {
   body {
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 350px;
+    padding-bottom: 200px;
   }
-
   .generalDesktop {
     height: 300px;
   }
 }
+
